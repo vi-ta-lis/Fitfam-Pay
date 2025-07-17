@@ -1,6 +1,6 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-weight: 400;
 
   color-scheme: light dark;
@@ -12,24 +12,137 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* css for home page */
 #home-header {
   font-size: large;
   color: white;
 }
 
+/* css for header */
+
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
+  background: linear-gradient(135deg, #000000, #6a0dad);
+  color: white;
 }
 
 header img {
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
 }
 
+#nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+#nav li {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  list-style: none;
+}
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+#nav a:hover {
+  color: #c084fc;
+}
+
+#nav a.active {
+  border-bottom: 2px solid #c084fc;
+}
+
+/* auth-css */
+#auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    #2b0032,
+    #4a007d,
+    #000000
+  ); /* Purple to black gradient */
+  min-height: 100vh;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#form-box {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+#form-box h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #c084fc; /* Light purple */
+}
+
+#form-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+#form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#form-box input:focus {
+  outline: 2px solid #c084fc;
+}
+
+#form-box button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #a855f7; /* Soft purple */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-box button:hover {
+  background-color: #9333ea; /* Deeper purple */
+}
+
+/* end */
+
+/* 
 header input {
   width: 300px;
   height: 40px;
@@ -37,6 +150,16 @@ header input {
   border: none;
   padding: 0 10px;
   margin: 0 10px;
+}
+
+header input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#join {
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 #input-container button {
@@ -49,4 +172,4 @@ header input {
   margin: 0 10px;
   cursor: pointer;
   background-color: rgb(123, 78, 255);
-}
+} */
