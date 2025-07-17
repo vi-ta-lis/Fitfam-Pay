@@ -1,9 +1,17 @@
 function Input() {
   return (
     <div id="input-container">
-      <input type="text" placeholder="find & pay for gym close by" />
-
-      <button>Search</button>
+      <form  id="gym-search-form">
+        <input
+          type="text"
+          name="gym-search"
+          id="search-input"
+          placeholder="Search for gyms near you..."
+        />
+        <button type="submit" id="search-button">
+          🔍
+        </button>
+      </form>
     </div>
   );
 }

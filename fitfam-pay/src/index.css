@@ -5,8 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +20,7 @@
 /* css for header */
 
 header {
-  background: linear-gradient(135deg, #000000, #6a0dad);
+  /* background: linear-gradient(135deg, #000000, #6a0dad); */
   color: white;
 }
 
@@ -75,15 +74,15 @@ header img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
-  padding: 40px;
-  background: linear-gradient(
+  gap: 20px;
+  padding: 20px;
+  /* background: linear-gradient(
     135deg,
     #2b0032,
     #4a007d,
     #000000
-  ); /* Purple to black gradient */
-  min-height: 100vh;
+  ); Purple to black gradient */
+  /* min-height: 100vh; */
   color: white;
   font-family: "Segoe UI", sans-serif;
 }
@@ -142,8 +141,84 @@ header img {
 
 /* end */
 
-/* 
-header input {
+/* css for first line  */
+#gym-search-form {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#search-input {
+  width: 85%;
+  padding: 14px 50px 14px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(43, 0, 50, 0.7); /* Matches your gradient tone */
+  color: white;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(6px);
+  transition: border 0.3s ease;
+}
+
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#search-input:focus {
+  border: 1px solid #a855f7; /* purple highlight */
+}
+
+#search-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: linear-gradient(to right, #7c3aed, #ec4899);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+#search-button:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* end */
+
+/* home styling */
+
+#home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Error-page styling */
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: white;
+}
+
+#error-page img {
+  width: 200px;
+  height: 200px;
+}
+
+/* end */
+
+/* header input {
   width: 300px;
   height: 40px;
   border-radius: 10px;

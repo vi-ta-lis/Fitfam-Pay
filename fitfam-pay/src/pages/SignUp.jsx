@@ -7,7 +7,7 @@ function SignUp() {
         <div id="form-box">
           <h1>Sign In</h1>
           <form>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="fullname">Full Name:</label>
             <input type="text" id="username" name="username" required />
 
             <label htmlFor="email">Email:</label>
@@ -22,7 +22,7 @@ function SignUp() {
         <div id="form-box">
           <h1>Sign Up</h1>
           <form>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="username">Full Name:</label>
             <input type="text" id="username" name="username" required />
 
             <label htmlFor="email">Email:</label>

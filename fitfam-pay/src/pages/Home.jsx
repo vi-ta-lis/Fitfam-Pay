@@ -1,10 +1,22 @@
 import Header from "../components/Header";
+import Input from "../components/Input";
+import HomeImg from "../assets/gym-1.png";
+
 function Home() {
   return (
-    <div>
+    <main>
       <Header />
-      <h1 id="home-header">This is the Home page</h1>
-    </div>
+      <div id="home-container">
+        <div>
+          <h1>Pay for Gym, flex your gains</h1>
+          <h2>Search. Pay. Train.</h2>
+          <Input />
+        </div>
+        <div>
+          <img src={HomeImg} alt="gym-photo" />
+        </div>
+      </div>
+    </main>
   );
 }
 export default Home;
