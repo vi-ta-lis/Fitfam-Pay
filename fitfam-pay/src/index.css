@@ -65,7 +65,7 @@ header img {
   color: #c084fc;
 }
 
-#nav a.active {
+ a.active {
   border-bottom: 2px solid #c084fc;
 }
 

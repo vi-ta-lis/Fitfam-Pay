@@ -44,12 +44,15 @@ function Home() {
       </div>
       <div id="line1">
         <h1>Why Choose Us?</h1>
+
+        {/* put a slider with cards here, using react slick  */}
       </div>
       <div id="line1">
         <h1>Own a Gym? Let's Partner Up</h1>
       </div>
       <div id="line1">
         <h1>Loved By Gym Goers</h1>
+        {/* put testimonials here in cards */}
       </div>
     </main>
   );
