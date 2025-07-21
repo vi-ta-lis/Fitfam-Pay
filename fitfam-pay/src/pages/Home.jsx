@@ -1,9 +1,15 @@
 import Header from "../components/Header";
 import Input from "../components/Input";
-import HomeImg from "../assets/gym-1.png";
-import FindGym from "../assets/magnifyglass_11303180.png";
-import PayGym from "../assets/credit-card.png";
-import Gymming from "../assets/weight-lifting.png";
+import HomeImg from "../assets/gym-head.jpg";
+import FindGym from "../assets/search-file.gif";
+import PayGym from "../assets/money.gif";
+import Bolt from "../assets/thunder.gif";
+import Gymming from "../assets/weightlifting.gif";
+import TheGym from "../assets/gym.gif";
+import Track from "../assets/receipt-verification.gif";
+import Travel from "../assets/airplane.gif";
+import TestimonialSlider from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -24,35 +30,59 @@ function Home() {
         <h1>How it Works</h1>
 
         <div id="steps">
-          <div>
+          <div className="step-card">
             <img src={FindGym} alt="Finding Gym" />
             <h2>Step 1:</h2>
             <h3>Find gyms near your current location or preferred area</h3>
           </div>
 
-          <div>
-            <img src={PayGym} alt="Finding Gym" />
+          <div className="step-card">
+            <img src={PayGym} alt="Paying Gym" />
             <h2>Step 2:</h2>
-            <h3>Find gyms near your current location or preferred area</h3>
+            <h3>Make secure payments for your gym membership</h3>
           </div>
-          <div>
-            <img src={Gymming} alt="Finding Gym" />
+
+          <div className="step-card">
+            <img src={Gymming} alt="Gymming" />
             <h2>Step 3:</h2>
-            <h3>Find gyms near your current location or preferred area</h3>
+            <h3>Start gymming and track your fitness journey</h3>
           </div>
         </div>
       </div>
-      <div id="line1">
+      <div className="why-card">
         <h1>Why Choose Us?</h1>
-
-        {/* put a slider with cards here, using react slick  */}
+        <ul>
+          <li>
+            <img src={Bolt} alt="fast" /> Fast, secure & seamless checkout
+          </li>
+          <li>
+            <img src={TheGym} alt="gym" /> Access to gyms across multiple cities
+          </li>
+          <li>
+            <img src={Track} alt="Track your membership" />
+            Track your gym membership
+          </li>
+          <li>
+            <img src={Travel} alt="travlers" /> Perfect for travelers, students
+            & busy professionals
+          </li>
+        </ul>
       </div>
-      <div id="line1">
+      <div className="why-card">
         <h1>Own a Gym? Let's Partner Up</h1>
+        <p>
+          Bring more foot traffic to your gym by listing it on our platform. Get
+          discovered by new customers in your area - risk free!
+        </p>
+        <a href="/join">
+          <button type="submit">List Your Gym</button>
+        </a>
       </div>
-      <div id="line1">
-        <h1>Loved By Gym Goers</h1>
-        {/* put testimonials here in cards */}
+      <div>
+        <TestimonialSlider />
+      </div>
+      <div>
+        <Footer />
       </div>
     </main>
   );

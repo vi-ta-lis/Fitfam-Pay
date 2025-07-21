@@ -1,6 +1,6 @@
 import Header from "../components/Header";
-// // import SignIn from "../pages/SignIn";
-// import Link from "react-router-dom";
+import Footer from "../components/Footer";
+
 function SignUp() {
   return (
     <>
@@ -18,12 +18,16 @@ function SignUp() {
             <label htmlFor="password">Confirm Password:</label>
             <input type="password" id="password" name="password" required />
             <p>
-              Already have an account? <a href="/signin">Sign in</a>
+              Already have an account?
+              <a id="text" href="/signin">
+                Sign in
+              </a>
             </p>
             <button type="submit">Sign Up</button>
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
