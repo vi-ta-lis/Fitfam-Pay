@@ -143,6 +143,7 @@ header img {
   border-radius: 12px;
   width: 300px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
 
@@ -503,6 +504,7 @@ header img {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 20px;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #ffffff, #e3d1ff);

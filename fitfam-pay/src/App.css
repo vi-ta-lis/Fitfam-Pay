@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: #333 !important;
+  font-size: 24px !important;
+}
