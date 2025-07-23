@@ -12,3 +12,20 @@
 .contact-img {
   animation: slideFadeIn 1s ease-out forwards;
 }
+
+.contact-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive image size for phones */
+@media (max-width: 600px) {
+  .contact-img {
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
