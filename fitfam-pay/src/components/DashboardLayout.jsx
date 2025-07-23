@@ -2,7 +2,7 @@ import Logo from "../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-prev
 
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import Dashboard from "./Dashboard";
+import Dashboard from "../pages/Dashboard";
 
 function DashboardLayout() {
   const [menuOpen, setMenuOpen] = useState(false);

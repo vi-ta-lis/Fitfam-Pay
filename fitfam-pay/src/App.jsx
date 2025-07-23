@@ -11,7 +11,7 @@ import ResetPass from "./pages/ResetPass";
 import Dashboard from "./pages/Dashboard";
 import ActiveMembers from "./pages/ActiveMembers";
 import ExpiredMembers from "./pages/ExpiredMembers";
-import DashboardLayout from "./pages/DashboardLayout";
+import DashboardLayout from "./components/DashboardLayout";
 import Subscribers from "./pages/Subscribers";
 
 const router = createBrowserRouter([
