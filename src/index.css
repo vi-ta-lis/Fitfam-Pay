@@ -1,0 +1,791 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* css for home page */
+#home-header {
+  font-size: large;
+  color: white;
+}
+
+/* css for header */
+
+header {
+  /* background: linear-gradient(135deg, #000000, #6a0dad); */
+  color: white;
+}
+
+header img {
+  width: 100px;
+  /* height: 100px; */
+}
+
+#nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+#nav li {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  list-style: none;
+}
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+#nav a:hover {
+  color: #c084fc;
+}
+
+#nav a.active {
+  border-bottom: 2px solid #c084fc;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 20;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  #nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #000;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 999;
+  }
+
+  #nav.open {
+    max-height: 300px;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  #nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+  }
+}
+
+/* auth-css */
+#auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  /* background: linear-gradient(
+    135deg,
+    #2b0032,
+    #4a007d,
+    #000000
+  ); Purple to black gradient */
+  /* min-height: 100vh; */
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#form-box {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+#form-box h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #c084fc; /* Light purple */
+}
+
+#form-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+#form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#form-box input:focus {
+  outline: 2px solid #c084fc;
+}
+
+#form-box button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #a855f7; /* Soft purple */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#text {
+  text-decoration: none;
+  margin: 5px;
+}
+
+#form-box button:hover {
+  background-color: #9333ea; /* Deeper purple */
+}
+
+/* end */
+
+/* css for first line  */
+#gym-search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#search-input {
+  width: 85%;
+  padding: 14px 50px 14px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(43, 0, 50, 0.7); /* Matches your gradient tone */
+  color: white;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(6px);
+  transition: border 0.3s ease;
+}
+
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#search-input:focus {
+  border: 1px solid #a855f7; /* purple highlight */
+}
+
+#search-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: linear-gradient(to right, #7c3aed, #ec4899);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+#search-button:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  #gym-search-form {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+
+  #search-input {
+    border-radius: 12px;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #search-button {
+    /* width: 10%; */
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+}
+/* end */
+
+/* home styling */
+
+#home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #ffffff, #800080) 1;
+}
+
+#home-container h1 {
+  font-size: 38px;
+}
+
+#home-container img {
+  width: 450px;
+  height: auto;
+  margin: 40px;
+  border-radius: 800px;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #home-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #home-container h1 {
+    font-size: 29.5px;
+  }
+
+  .home-text {
+    order: 2;
+  }
+
+  .home-image {
+    order: 1;
+  }
+
+  h1 {
+    font-size: px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* home styling end */
+
+/* Error-page styling */
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: white;
+}
+
+#error-page img {
+  width: 200px;
+  height: 200px;
+}
+
+/* end */
+
+/* line1 css */
+#line1txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+#steps {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.step-card {
+  flex: 1 1 300px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #e3d1ff
+  ); /* White to light purple */
+  color: #000; /* Make all text inside black */
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.step-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(74, 0, 125, 0.25);
+}
+
+.step-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
+
+.step-card h2,
+.step-card h3 {
+  color: #000; /* Force black text for headings */
+}
+
+.step-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.step-card h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+#steps img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* line1 css end */
+
+/* line2css */
+
+.why-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff, #e3d1ff);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.why-card h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+  border-bottom: 2px solid #c084fc;
+}
+
+.why-card ul {
+  list-style: none;
+  padding: 0;
+}
+.why-card img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+}
+
+.why-card li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: #4a007d;
+  margin-right: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.why-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #a855f7; /* Soft purple */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* line2css end */
+
+/* Testimonial slider */
+
+.testimonial-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.testimonial-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffffff, #e3d1ff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.testimonial-card p {
+  color: #000;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff6d00;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #eee;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #a855f7;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6d00;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .testimonial-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+    border-radius: 40px;
+    max-width: 350px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+/* Testimonial slider end */
+
+/* Footer css */
+
+.footer {
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #ffffff, #800080) 1;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-logo h2 {
+  font-size: 1.5rem;
+  color: #ece9e6;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #c084fc;
+  cursor: pointer;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.2);
+  color: #ffb300;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile-specific */
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+  }
+
+  .footer-logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer-socials a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Footer css end  */
+
+/* Gym owner dashboard  */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
+}
+
+.sidebar {
+  width: 240px;
+  background: white;
+  padding: 24px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: purple;
+  margin-bottom: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: purple;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+/* summary section */
+.card {
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.summary-box {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.summary-total {
+  background-color: #eae4ff;
+}
+
+.summary-active {
+  background-color: #e0fbe0;
+}
+
+.summary-expired {
+  background-color: #ffe0e0;
+}
+
+.summary-income {
+  background-color: #fff6e0;
+}
+
+/* Gym owner dashboard end */

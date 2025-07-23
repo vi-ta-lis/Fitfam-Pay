@@ -1,0 +1,83 @@
+.services-section {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Removed white background */
+}
+
+.service-box {
+  border: 1px solid #fff; /* white border */
+  padding: 20px;
+  text-align: center;
+  background-color: transparent; /* no background */
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: white; /* white text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.service-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.service-box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.service-box:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.service-box:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.service-box:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.large-box {
+  width: 400px;
+  height: 150px;
+}
+
+.small-box {
+  width: 350px;  /* Increased width */
+  height: 140px; /* Increased height */
+}
+
+.about-main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+ h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.about-text-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+}
+
+.about-container {
+  color: white;
+}
