@@ -1,8 +1,9 @@
-import DashboardLayout from "../components/DashboardLayout";
+import DashHeader from "../components/DashHeader";
+import Footer from "../components/Footer";
 
 const Dashboard = () => (
   <div className="card">
-    <DashboardLayout />
+    <DashHeader />
     <div className="card-content">
       <h2 className="section-title">Gym Summary</h2>
       <div className="summary-grid">
@@ -24,6 +25,8 @@ const Dashboard = () => (
         </div>
       </div>
     </div>
+
+    <Footer />
   </div>
 );
 export default Dashboard;

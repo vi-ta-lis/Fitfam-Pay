@@ -1,10 +1,13 @@
-import DashboardLayout from "../components/DashboardLayout";
-
+import DashHeader from "../components/DashHeader";
+import Footer from "../components/Footer";
 const ExpiredMembers = () => (
-  <div>
-    <DashboardLayout />
-    <h2 className="section-title">Expired Members</h2>
-    <p>(Table of expired users)</p>
-  </div>
+  <>
+    <div>
+      <DashHeader />
+      <h2 className="section-title">Expired Members</h2>
+      <p>(Table of expired users)</p>
+    </div>
+    <Footer />
+  </>
 );
 export default ExpiredMembers;
