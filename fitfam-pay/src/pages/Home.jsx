@@ -10,24 +10,30 @@ import Track from "../assets/receipt-verification.gif";
 import Travel from "../assets/airplane.gif";
 import TestimonialSlider from "../components/Testimonials";
 import Footer from "../components/Footer";
-
+import { Element } from "react-scroll";
+import Fadein from "../components/FadeIn";
 function Home() {
   return (
     <main>
       <Header />
-      <div id="home-container">
-        <div>
-          <h1>Pay for Gym, flex your gains</h1>
-          <h2>Search. Pay. Train.</h2>
-          <Input />
-        </div>
-        <div>
-          <img src={HomeImg} alt="gym-photo" />
-        </div>
+
+      <div>
+        <Element name="home">
+          <div id="home-container">
+            <div>
+              <h1>Pay for Gym, flex your gains</h1>
+              <h2>Search. Pay. Train.</h2>
+              <Input />
+            </div>
+            <div>
+              <img src={HomeImg} alt="gym-photo" />
+            </div>
+          </div>
+        </Element>
       </div>
 
-      <div id="line1">
-        <h1>How it Works</h1>
+      <Fadein id="line1">
+        <h1 id="line1txt">How it Works</h1>
 
         <div id="steps">
           <div className="step-card">
@@ -45,42 +51,53 @@ function Home() {
           <div className="step-card">
             <img src={Gymming} alt="Gymming" />
             <h2>Step 3:</h2>
-            <h3>Start gymming and track your fitness journey</h3>
+            <h3>Start training and track your fitness journey</h3>
           </div>
         </div>
-      </div>
-      <div className="why-card">
-        <h1>Why Choose Us?</h1>
-        <ul>
-          <li>
-            <img src={Bolt} alt="fast" /> Fast, secure & seamless checkout
-          </li>
-          <li>
-            <img src={TheGym} alt="gym" /> Access to gyms across multiple cities
-          </li>
-          <li>
-            <img src={Track} alt="Track your membership" />
-            Track your gym membership
-          </li>
-          <li>
-            <img src={Travel} alt="travlers" /> Perfect for travelers, students
-            & busy professionals
-          </li>
-        </ul>
-      </div>
-      <div className="why-card">
-        <h1>Own a Gym? Let's Partner Up</h1>
-        <p>
-          Bring more foot traffic to your gym by listing it on our platform. Get
-          discovered by new customers in your area - risk free!
-        </p>
-        <a href="/join">
-          <button type="submit">List Your Gym</button>
-        </a>
-      </div>
-      <div>
-        <TestimonialSlider />
-      </div>
+      </Fadein>
+
+      <Fadein>
+        <div className="why-card">
+          <h1>Why Choose Us?</h1>
+          <ul>
+            <li>
+              <img src={Bolt} alt="fast" /> Fast, secure & seamless checkout
+            </li>
+            <li>
+              <img src={TheGym} alt="gym" /> Access to gyms across multiple
+              cities
+            </li>
+            <li>
+              <img src={Track} alt="Track your membership" />
+              Track your gym membership
+            </li>
+            <li>
+              <img src={Travel} alt="travlers" /> Perfect for travelers,
+              students & busy professionals
+            </li>
+          </ul>
+        </div>
+      </Fadein>
+
+      <Fadein>
+        <div className="why-card">
+          <h1>Own a Gym? Let's Partner Up</h1>
+          <p>
+            Bring more foot traffic to your gym by listing it on our platform.
+            Get discovered by new customers in your area - risk free!
+          </p>
+          <a href="/join">
+            <button type="submit">List Your Gym</button>
+          </a>
+        </div>
+      </Fadein>
+
+      <Fadein>
+        <div>
+          <TestimonialSlider />
+        </div>
+      </Fadein>
+
       <div>
         <Footer />
       </div>

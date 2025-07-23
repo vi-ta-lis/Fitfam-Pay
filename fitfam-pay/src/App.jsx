@@ -8,6 +8,11 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ResetPass from "./pages/ResetPass";
+import Dashboard from "./pages/Dashboard";
+import ActiveMembers from "./pages/ActiveMembers";
+import ExpiredMembers from "./pages/ExpiredMembers";
+import DashboardLayout from "./pages/DashboardLayout";
+import Subscribers from "./pages/Subscribers";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <Error /> },
@@ -16,6 +21,11 @@ const router = createBrowserRouter([
   { path: "/about", element: <About />, errorElement: <Error /> },
   { path: "/signin", element: <SignIn />, errorElement: <Error /> },
   { path: "/resetpassword", element: <ResetPass />, errorElement: <Error /> },
+  { path: "/dashboard", element: <Dashboard /> },
+  { path: "/activemembers", element: <ActiveMembers /> },
+  { path: "/expiredmembers", element: <ExpiredMembers /> },
+  { path: "/dashboardlayout", element: <DashboardLayout /> },
+  { path: "/subscribers", element: <Subscribers /> },
 
   // Assuming Contact.jsx is used for both About and Contact pages
 ]);
