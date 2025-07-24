@@ -21,6 +21,16 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
 #home-header {
   font-size: large;
   color: white;
@@ -497,7 +507,7 @@ header img {
   .why-card {
     padding: 1.5rem;
     border-radius: 15px;
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
