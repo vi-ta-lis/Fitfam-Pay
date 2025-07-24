@@ -14,7 +14,12 @@ body {
   min-height: 100vh;
 }
 
-
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 /* css for home page */
 #home-header {
   font-size: large;
