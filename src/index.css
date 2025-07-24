@@ -320,6 +320,10 @@ header img {
     padding: 1rem;
   }
 
+   #home-container img {
+    max-width: 100%; 
+  }
+
   #home-container h1 {
     font-size: 29.5px;
   }
