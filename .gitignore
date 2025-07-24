@@ -1,3 +1,29 @@
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 # Node.js (React)
 node_modules/
 build/
@@ -56,3 +82,4 @@ Thumbs.db
 
 package-lock.json
 yarn.lock
+>>>>>>> 221de22e2ced600899564dc205083613cb7a7c67
