@@ -322,6 +322,7 @@ header img {
 
    #home-container img {
     max-width: 100%;
+     margin:50px;
      display:flex;
      justify-content: center;
      align-items: center;
