@@ -1,7 +1,6 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
@@ -16,6 +15,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #home-header {
@@ -489,8 +492,6 @@ header img {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-
 
 @media (max-width: 600px) {
   .why-card {
