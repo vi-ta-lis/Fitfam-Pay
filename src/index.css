@@ -1,8 +1,6 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
@@ -10,6 +8,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 /* css for home page */
 #home-header {
@@ -257,7 +266,7 @@ header img {
 
   #search-input {
     border-radius: 12px;
-    width: 100%;
+    width: 80%;
     font-size: 1rem;
   }
 
@@ -309,6 +318,15 @@ header img {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+  }
+
+   #home-container img {
+    max-width: 100%;
+     margin:50px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     
   }
 
   #home-container h1 {
@@ -471,6 +489,14 @@ header img {
   font-size: 1.3rem;
 }
 
+  @media (max-width: 600px) {
+  .why-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 80%;
+  }
+}
+
 .why-card button {
   margin-top: 20px;
   width: 100%;
@@ -555,7 +581,7 @@ header img {
   .testimonial-card {
     padding: 1.5rem;
     border-radius: 40px;
-    max-width: 350px;
+    max-width: 80%;
   }
 
   .testimonial-text {
