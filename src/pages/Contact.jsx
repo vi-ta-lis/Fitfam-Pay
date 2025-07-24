@@ -52,17 +52,12 @@ function Contact() {
               paddingRight: "2rem",
             }}
           >
-            <img
-  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
-  alt="Friendly Black Male"
-  className="contact-img"
-  style={{
-    maxWidth: "100%",
-    height: "auto",
-    borderRadius: "12px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-  }}
-/>
+          <img
+            src="/contact2.jpg"
+            alt="contact"
+            className="responsive-image"
+          />
+
           </div>
         </div>
 

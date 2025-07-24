@@ -9,23 +9,22 @@
   }
 }
 
-.contact-img {
-  animation: slideFadeIn 1s ease-out forwards;
-}
-
-.contact-img {
-  max-width: 100%;
-  height: auto;
+.responsive-image {
+  width: 100%;               /* Makes it responsive */
+  max-width: 800px;          /* You can increase this */
+  height: 450px;             /* Increase height */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Responsive image size for phones */
+/* 📱 Mobile: reduce size */
 @media (max-width: 600px) {
-  .contact-img {
-    width: 140px;
-    margin: 0 auto;
-    display: block;
+  .responsive-image {
+    max-width: 95%;
+    height: 180px;
   }
 }
 
