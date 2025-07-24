@@ -321,7 +321,11 @@ header img {
   }
 
    #home-container img {
-    max-width: 100%; 
+    max-width: 100%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     
   }
 
   #home-container h1 {
