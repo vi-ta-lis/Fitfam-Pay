@@ -321,11 +321,9 @@ header img {
   }
 
    #home-container img {
-    max-width: 100%;
-     margin:50px;
-     display:flex;
-     justify-content: center;
-     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
      
   }
 
