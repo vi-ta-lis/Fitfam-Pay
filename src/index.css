@@ -1,8 +1,6 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
@@ -11,6 +9,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+    overflow: hidden;
+    min-height: 100vh;
+
+
 /* css for home page */
 #home-header {
   font-size: large;
@@ -471,6 +475,14 @@ header img {
   font-size: 1.3rem;
 }
 
+  @media (max-width: 600px) {
+  .why-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 80%;
+  }
+}
+
 .why-card button {
   margin-top: 20px;
   width: 100%;
@@ -555,7 +567,7 @@ header img {
   .testimonial-card {
     padding: 1.5rem;
     border-radius: 40px;
-    max-width: 350px;
+    max-width: 80%;
   }
 
   .testimonial-text {
