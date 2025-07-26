@@ -15,7 +15,7 @@ export default function ResetPass() {
           </form>
         </div>
       </div>
-        <Footer />
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Gym from "../assets/gym-details.jpg";
 
 const sampleGym = {
   name: "Praise Edoho Gym",
-  image: Gym, // Ensure image is in public/assets
+  image: Gym, 
   location: "Lekki Phase 1, Eket",
   description:
     "A state-of-the-art gym facility with the latest equipment and certified trainers.",
