@@ -12,11 +12,11 @@ import TestimonialSlider from "../components/Testimonials";
 import Footer from "../components/Footer";
 import { Element } from "react-scroll";
 import Fadein from "../components/FadeIn";
+
 function Home() {
   return (
     <main>
       <Header />
-
       <div>
         <Element name="home">
           <div id="home-container">
@@ -97,7 +97,6 @@ function Home() {
           <TestimonialSlider />
         </div>
       </Fadein>
-
       <div>
         <Footer />
       </div>
@@ -105,6 +104,3 @@ function Home() {
   );
 }
 export default Home;
-
-//change search btn to Join now,then as you click on join now it takes you to a page where you sign up/sign in. can search or use current location to search & pay for gyms around.
-//  change input to a profile/account/login
