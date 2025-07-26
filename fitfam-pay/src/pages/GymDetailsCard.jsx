@@ -11,7 +11,7 @@ const sampleGym = {
     "24/7 Access to drinking Garri",
     "Personal Garri drinking coaches",
     "Groundnut",
-    "Sat",
+    "Salt",
   ],
   price: 8000,
 };
