@@ -23,7 +23,7 @@ export default function GymMap({ gymData, onGymSelect }) {
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/mapbox/streets-v11",
+      style: "mapbox://styles/mapbox/navigation-night-v1",
       center: [7.4083, 6.8646],
     });
 

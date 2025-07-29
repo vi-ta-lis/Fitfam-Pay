@@ -22,7 +22,7 @@ function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [locationText, setLocationText] = useState("");
   const [hasSearched, setHasSearched] = useState(false);
-  // const [selectedGym, setSelectedGym] = useState(null);
+  const [selectedGym, setSelectedGym] = useState(null);
 
   const handleSearch = async (query) => {
     if (!query || query.trim() === "") return;
@@ -36,6 +36,10 @@ function Home() {
     setTimeout(() => {
       new Promise((resolve) => resolve(setIsLoading(false)));
     }, 2000);
+  };
+
+  const handleGymSelect = (gym) => {
+    setSelectedGym(gym);
   };
 
   return (
@@ -69,7 +73,11 @@ function Home() {
               </p>
             )}
             {!isLoading && searchResult && (
-              <GymMap key={searchResult} gymData={searchResult} />
+              <GymMap
+                key={searchResult}
+                gymData={searchResult}
+                onGymSelect={handleGymSelect}
+              />
             )}
           </>
         )}
