@@ -16,6 +16,7 @@ import Fadein from "../components/FadeIn";
 import { useState } from "react";
 import GymMap from "../components/GymMap";
 import { GYMDATA } from "../util/gym";
+import GymDetailsCard from "../components/GymDetailsCard";
 
 function Home() {
   const [searchResult, setSearchResult] = useState([]);
@@ -59,9 +60,17 @@ function Home() {
         </div>
       </Element>
 
-      <div style={{ padding: "1rem" }}>
+      <div
+        style={{
+          padding: "1rem",
+          display: "flex",
+          gap: "1rem",
+          justifyContent: "space-around",
+        }}
+      >
+        {selectedGym && <GymDetailsCard gym={selectedGym} />}
         {hasSearched && (
-          <>
+          <div style={{ width: "100%" }}>
             <h2>
               Gyms near: <em>{locationText}</em>
             </h2>
@@ -79,7 +88,7 @@ function Home() {
                 onGymSelect={handleGymSelect}
               />
             )}
-          </>
+          </div>
         )}
       </div>
 
