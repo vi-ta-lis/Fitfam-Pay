@@ -17,6 +17,7 @@ import { useState } from "react";
 import GymMap from "../components/GymMap";
 import { GYMDATA } from "../util/gym";
 import GymDetailsCard from "../components/GymDetailsCard";
+import ComingSoon from "../components/ComingSoon";
 
 function Home() {
   const [searchResult, setSearchResult] = useState([]);
@@ -153,6 +154,9 @@ function Home() {
 
       <Fadein>
         <TestimonialSlider />
+      </Fadein>
+      <Fadein>
+        <ComingSoon />
       </Fadein>
 
       <Footer />
