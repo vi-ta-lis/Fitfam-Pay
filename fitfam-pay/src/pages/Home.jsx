@@ -12,7 +12,7 @@ import TestimonialSlider from "../components/Testimonials";
 import Footer from "../components/Footer";
 import { Element } from "react-scroll";
 import Fadein from "../components/FadeIn";
-import ComingSoon from "../components/ComingSoon";
+import ComingSoon from "../../../src/components/ComingSoon";
 
 function Home() {
   return (
