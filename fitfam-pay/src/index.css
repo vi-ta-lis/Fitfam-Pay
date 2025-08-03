@@ -564,7 +564,7 @@ header img {
 }
 
 .why-card button {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 100%;
   padding: 12px;
   background-color: #a855f7; /* Soft purple */
@@ -905,3 +905,66 @@ header img {
 }
 
 /* Gym owner dashboard end */
+
+/* Coming Soon Component */
+.signup-container {
+  padding: 40px 16px;
+  /* background-color: #111815; */
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.signup-inner {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 480px;
+  background-color: #293833;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.signup-input {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: #293833;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+.signup-input::placeholder {
+  color: #9db8af;
+}
+
+/* .signup-button {
+  border: none;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 12px 12px 0;
+} */
+
+.signup-button:hover {
+  opacity: 0.9;
+}
+
+/* Coming Soon Component end */
