@@ -147,7 +147,9 @@ function Home() {
             Get discovered by new customers in your area - risk free!
           </p>
           <a href="/join">
-            <button type="submit">List Your Gym</button>
+            <button style={{ marginTop: "20px" }} type="submit">
+              List Your Gym
+            </button>
           </a>
         </div>
       </Fadein>
