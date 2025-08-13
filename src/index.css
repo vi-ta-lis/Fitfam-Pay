@@ -153,6 +153,8 @@ header img {
   width: 300px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
 
@@ -724,92 +726,3 @@ header img {
 }
 
 /* Footer css end  */
-
-/* Gym owner dashboard  */
-.layout {
-  display: flex;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #2b0032, #4a007d, #000000);
-}
-
-.sidebar {
-  width: 240px;
-  background: white;
-  padding: 24px;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: purple;
-  margin-bottom: 24px;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.nav-link {
-  color: #333;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: purple;
-}
-
-.main-content {
-  flex: 1;
-  padding: 32px;
-  overflow-y: auto;
-}
-
-/* summary section */
-.card {
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.card-content {
-  padding: 16px;
-}
-
-.section-title {
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-}
-
-.summary-box {
-  background: #f0f0f0;
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-}
-
-.summary-total {
-  background-color: #eae4ff;
-}
-
-.summary-active {
-  background-color: #e0fbe0;
-}
-
-.summary-expired {
-  background-color: #ffe0e0;
-}
-
-.summary-income {
-  background-color: #fff6e0;
-}
-
-/* Gym owner dashboard end */

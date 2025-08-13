@@ -8,12 +8,11 @@ function Contact() {
       <div
         style={{
           minHeight: "100vh",
-          background: "linear-gradient(to bottom, #4c1d95, #6b21a8)",
           color: "white",
           padding: "2rem 1rem",
         }}
       >
-        {/* Top Section */}
+  
         <div
           style={{
             display: "flex",
@@ -23,7 +22,7 @@ function Contact() {
             gap: "1rem",
           }}
         >
-          {/* Left Half */}
+
           <div
             style={{
               flex: "1",
@@ -37,11 +36,10 @@ function Contact() {
           >
             <h1 style={{ fontSize: "7rem", margin: 0, lineHeight: "1" }}>Hello.</h1>
             <p style={{ fontSize: "1.5rem", marginTop: "1rem", maxWidth: "400px" }}>
-              Need to get in touch? We're all ears.
+              Need to get in touch? We're all ears..
             </p>
           </div>
 
-          {/* Right Half - Black Male Image */}
           <div
             style={{
               flex: "1",
@@ -61,7 +59,6 @@ function Contact() {
           </div>
         </div>
 
-        {/* Contact Form Section */}
         <div
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.05)",
