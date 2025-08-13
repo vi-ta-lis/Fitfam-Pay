@@ -1,9 +1,9 @@
-import GymDetailsCard from "./GymDetails";
+import GymDetailsCard from "../components/GymDetailsCard";
 import Gym from "../assets/gym-details.jpg";
 
 const sampleGym = {
   name: "Praise Edoho Gym",
-  image: Gym, 
+  image: Gym,
   location: "Lekki Phase 1, Eket",
   description:
     "A state-of-the-art gym facility with the latest equipment and certified trainers.",

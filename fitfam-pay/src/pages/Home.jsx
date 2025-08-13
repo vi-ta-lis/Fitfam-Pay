@@ -12,6 +12,7 @@ import TestimonialSlider from "../components/Testimonials";
 import Footer from "../components/Footer";
 import { Element } from "react-scroll";
 import Fadein from "../components/FadeIn";
+import ComingSoon from "../../../src/components/ComingSoon";
 
 function Home() {
   return (
@@ -87,7 +88,9 @@ function Home() {
             Get discovered by new customers in your area - risk free!
           </p>
           <a href="/join">
-            <button type="submit">List Your Gym</button>
+            <button style={{ marginTop: "20px" }} type="submit">
+              List Your Gym
+            </button>
           </a>
         </div>
       </Fadein>
@@ -95,6 +98,11 @@ function Home() {
       <Fadein>
         <div>
           <TestimonialSlider />
+        </div>
+      </Fadein>
+      <Fadein>
+        <div>
+          <ComingSoon />
         </div>
       </Fadein>
       <div>
