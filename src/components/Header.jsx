@@ -33,6 +33,11 @@ function Header() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/workouts" onClick={() => setMenuOpen(false)}>
+                Workouts
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/about" onClick={() => setMenuOpen(false)}>
                 About Us
               </NavLink>
