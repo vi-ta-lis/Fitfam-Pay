@@ -35,6 +35,7 @@ function Footer() {
           </a>
         </div>
       </div>
+
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} FitfamPay. All rights reserved.</p>
       </div>
