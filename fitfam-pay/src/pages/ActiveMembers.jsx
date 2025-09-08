@@ -1,13 +1,10 @@
-import DashHeader from "../components/DashHeader";
-import Footer from "../components/Footer";
+import DashboardLayout from "../components/DashboardLayout";
+
 const ActiveMembers = () => (
-  <>
-    <div>
-      <DashHeader />
-      <h2 className="section-title">Active Members</h2>
-      <p>(Table of active users)</p>
-    </div>
-    <Footer />
-  </>
+  <div>
+    <DashboardLayout />
+    <h2 className="section-title">Active Members</h2>
+    <p>(Table of active users)</p>
+  </div>
 );
 export default ActiveMembers;

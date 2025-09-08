@@ -1,13 +1,132 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import "../Contact.css";
 function Contact() {
   return (
-    <div>
+    <>
       <Header />
-      <h1>This is the Contact us Page</h1>
+      <div
+        style={{
+          minHeight: "100vh",
+          color: "white",
+          padding: "2rem 1rem",
+        }}
+      >
+  
+        <div
+          style={{
+            display: "flex",
+            height: "70vh",
+            marginBottom: "3rem",
+            flexWrap: "wrap",
+            gap: "1rem",
+          }}
+        >
+
+          <div
+            style={{
+              flex: "1",
+              minWidth: "300px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              paddingLeft: "2rem",
+              alignItems: "flex-start",
+            }}
+          >
+            <h1 style={{ fontSize: "7rem", margin: 0, lineHeight: "1" }}>Hello.</h1>
+            <p style={{ fontSize: "1.5rem", marginTop: "1rem", maxWidth: "400px" }}>
+              Need to get in touch? We're all ears..
+            </p>
+          </div>
+
+          <div
+            style={{
+              flex: "1",
+              minWidth: "300px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              paddingRight: "2rem",
+            }}
+          >
+          <img
+            src="/contact2.jpg"
+            alt="contact"
+            className="responsive-image"
+          />
+
+          </div>
+        </div>
+
+        <div
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            padding: "2rem",
+            borderRadius: "16px",
+            width: "90%",
+            maxWidth: "450px",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>Contact Us</h1>
+          <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
+            Reach out for inquiries, partnerships, or feedback.
+          </p>
+
+          <form style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <input
+              type="text"
+              placeholder="Your Name"
+              style={{
+                padding: "0.75rem",
+                borderRadius: "8px",
+                border: "none",
+                fontSize: "1rem",
+              }}
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              style={{
+                padding: "0.75rem",
+                borderRadius: "8px",
+                border: "none",
+                fontSize: "1rem",
+              }}
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              style={{
+                padding: "0.75rem",
+                borderRadius: "8px",
+                border: "none",
+                fontSize: "1rem",
+              }}
+            ></textarea>
+            <button
+              type="submit"
+              style={{
+                padding: "0.8rem",
+                backgroundColor: "#9333ea",
+                border: "none",
+                color: "white",
+                fontWeight: "bold",
+                borderRadius: "8px",
+                fontSize: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
+
 export default Contact;

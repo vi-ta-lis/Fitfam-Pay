@@ -9,33 +9,92 @@ import TheGym from "../assets/gym.gif";
 import Track from "../assets/receipt-verification.gif";
 import Travel from "../assets/airplane.gif";
 import TestimonialSlider from "../components/Testimonials";
+import MapView from "../components/MapView";
 import Footer from "../components/Footer";
 import { Element } from "react-scroll";
 import Fadein from "../components/FadeIn";
-import ComingSoon from "../../../src/components/ComingSoon";
+import { useState } from "react";
+import GymMap from "../components/GymMap";
+import { GYMDATA } from "../util/gym";
+import GymDetailsCard from "../components/GymDetailsCard";
+import ComingSoon from "../components/ComingSoon";
 
 function Home() {
+  const [searchResult, setSearchResult] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [locationText, setLocationText] = useState("");
+  const [hasSearched, setHasSearched] = useState(false);
+  const [selectedGym, setSelectedGym] = useState(null);
+
+  const handleSearch = async (query) => {
+    if (!query || query.trim() === "") return;
+
+    setLocationText(query);
+    setIsLoading(true);
+    setSearchResult(GYMDATA); // dummy data from js file
+    setHasSearched(true);
+
+    // wait for 2 secs
+    setTimeout(() => {
+      new Promise((resolve) => resolve(setIsLoading(false)));
+    }, 2000);
+  };
+
+  const handleGymSelect = (gym) => {
+    setSelectedGym(gym);
+  };
+
   return (
     <main>
       <Header />
-      <div>
-        <Element name="home">
-          <div id="home-container">
-            <div>
-              <h1>Pay for Gym, flex your gains</h1>
-              <h2>Search. Pay. Train.</h2>
-              <Input />
-            </div>
-            <div>
-              <img src={HomeImg} alt="gym-photo" />
-            </div>
+
+      <Element name="home">
+        <div id="home-container">
+          <div>
+            <h1>Pay for Gym, flex your gains</h1>
+            <h2>Search. Pay. Train.</h2>
+            <Input onSearch={handleSearch} />
           </div>
-        </Element>
+          <div>
+            <img src={HomeImg} alt="gym-photo" />
+          </div>
+        </div>
+      </Element>
+
+      <div
+        style={{
+          padding: "1rem",
+          display: "flex",
+          gap: "1rem",
+          justifyContent: "space-around",
+        }}
+      >
+        {selectedGym && <GymDetailsCard gym={selectedGym} />}
+        {hasSearched && (
+          <div style={{ width: "100%" }}>
+            <h2>
+              Gyms near: <em>{locationText}</em>
+            </h2>
+            {isLoading && <p>Loading gyms...</p>}
+            {!isLoading && searchResult.length === 0 && (
+              <p>
+                No gyms found near "{locationText}" — maybe try a bigger city or
+                check your spelling.
+              </p>
+            )}
+            {!isLoading && searchResult && (
+              <GymMap
+                key={searchResult}
+                gymData={searchResult}
+                onGymSelect={handleGymSelect}
+              />
+            )}
+          </div>
+        )}
       </div>
 
       <Fadein id="line1">
         <h1 id="line1txt">How it Works</h1>
-
         <div id="steps">
           <div className="step-card">
             <img src={FindGym} alt="Finding Gym" />
@@ -69,8 +128,8 @@ function Home() {
               cities
             </li>
             <li>
-              <img src={Track} alt="Track your membership" />
-              Track your gym membership
+              <img src={Track} alt="Track your membership" /> Track your gym
+              membership
             </li>
             <li>
               <img src={Travel} alt="travlers" /> Perfect for travelers,
@@ -96,19 +155,15 @@ function Home() {
       </Fadein>
 
       <Fadein>
-        <div>
-          <TestimonialSlider />
-        </div>
+        <TestimonialSlider />
       </Fadein>
       <Fadein>
-        <div>
-          <ComingSoon />
-        </div>
+        <ComingSoon />
       </Fadein>
-      <div>
-        <Footer />
-      </div>
+
+      <Footer />
     </main>
   );
 }
+
 export default Home;

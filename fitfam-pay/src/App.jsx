@@ -13,8 +13,7 @@ import ActiveMembers from "./pages/ActiveMembers";
 import ExpiredMembers from "./pages/ExpiredMembers";
 import DashboardLayout from "./components/DashboardLayout";
 import Subscribers from "./pages/Subscribers";
-import GymDetailsCard from "./pages/GymDetailsCard";
-
+import WorkoutExplorer from "./pages/WorkoutExplorer";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home />, errorElement: <Error /> },
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
   { path: "/expiredmembers", element: <ExpiredMembers /> },
   { path: "/dashboardlayout", element: <DashboardLayout /> },
   { path: "/subscribers", element: <Subscribers /> },
-  { path: "/gymdetails", element: <GymDetailsCard /> },
+  { path: "/workouts", element: <WorkoutExplorer /> },
 
   // Assuming Contact.jsx is used for both About and Contact pages
 ]);
