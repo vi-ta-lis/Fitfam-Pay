@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 import { Link } from "react-scroll";
-import Logo from "../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
+import Logo from "../../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
 
 function Footer() {
   return (
@@ -16,9 +16,9 @@ function Footer() {
 
         <div className="footer-links">
           <NavLink to="/about">About</NavLink>
-          <Link to="home" smooth={true} duration={700}>
+          {/* <Link to="home" smooth={true} duration={700}>
             Find Gyms
-          </Link>
+          </Link> */}
           <NavLink to="/join">Join</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>

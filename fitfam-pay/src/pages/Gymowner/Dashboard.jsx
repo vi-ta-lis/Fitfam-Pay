@@ -1,4 +1,4 @@
-import DashboardLayout from "../components/DashboardLayout";
+import DashboardLayout from "../../components/UI/DashboardLayout";
 
 const Dashboard = () => (
   <div className="card">

@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Input from "../components/Input";
+import Header from "../components/UI/Header";
+import Input from "../components/Map/Input";
 import HomeImg from "../assets/gym-head.jpg";
 import FindGym from "../assets/search-file.gif";
 import PayGym from "../assets/money.gif";
@@ -8,16 +8,16 @@ import Gymming from "../assets/weightlifting.gif";
 import TheGym from "../assets/gym.gif";
 import Track from "../assets/receipt-verification.gif";
 import Travel from "../assets/airplane.gif";
-import TestimonialSlider from "../components/Testimonials";
-import MapView from "../components/MapView";
-import Footer from "../components/Footer";
+import TestimonialSlider from "../components/UI/Testimonials";
+import MapView from "../components/Map/MapView";
+import Footer from "../components/UI/Footer";
 import { Element } from "react-scroll";
-import Fadein from "../components/FadeIn";
+import Fadein from "../components/Animation/FadeIn";
 import { useState } from "react";
-import GymMap from "../components/GymMap";
+import GymMap from "../components/Map/GymMap";
 import { GYMDATA } from "../util/gym";
-import GymDetailsCard from "../components/GymDetailsCard";
-import ComingSoon from "../components/ComingSoon";
+import GymDetailsCard from "../components/Map/GymDetailsCard";
+import ComingSoon from "../components/UI/ComingSoon";
 
 function Home() {
   const [searchResult, setSearchResult] = useState([]);

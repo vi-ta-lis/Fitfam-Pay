@@ -1,18 +1,18 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/Auth/SignUp";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
-import SignIn from "./pages/SignIn";
+import SignIn from "./pages/Auth/SignIn";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ResetPass from "./pages/ResetPass";
-import Dashboard from "./pages/Dashboard";
-import ActiveMembers from "./pages/ActiveMembers";
-import ExpiredMembers from "./pages/ExpiredMembers";
-import DashboardLayout from "./components/DashboardLayout";
-import Subscribers from "./pages/Subscribers";
+import ResetPass from "./pages/Auth/ResetPass";
+import Dashboard from "./pages/Gymowner/Dashboard";
+import ActiveMembers from "./pages/Gymowner/ActiveMembers";
+import ExpiredMembers from "./pages/Gymowner/ExpiredMembers";
+import DashboardLayout from "./components/UI/DashboardLayout";
+import Subscribers from "./pages/Gymowner/Subscribers";
 import WorkoutExplorer from "./pages/WorkoutExplorer";
 
 const router = createBrowserRouter([

@@ -1,8 +1,8 @@
 // src/pages/About.jsx
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import FoundersCarousel from "../components/FoundersCarousel";
-import AboutHero from "../components/AboutHero";
+import Header from "../../src/components/UI/Header";
+import Footer from "../../src/components/UI/Footer";
+import FoundersCarousel from "../../src/components/UI/FoundersCarousel";
+import AboutHero from "../../src/components/UI/AboutHero";
 // eslint-disable-next-line
 import { motion } from "framer-motion";
 

@@ -1,8 +1,8 @@
-import Logo from "../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
+import Logo from "../../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
 
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../../pages/Gymowner/Dashboard";
 
 function DashboardLayout() {
   const [menuOpen, setMenuOpen] = useState(false);

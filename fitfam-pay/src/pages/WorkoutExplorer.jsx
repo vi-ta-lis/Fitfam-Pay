@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/UI/Header";
+import Footer from "../components/UI/Footer";
 import WorkoutCard from "./WorkoutCard";
-import Loading from "../assets/loading.gif";
+import Loading from "../../src/assets/loading.gif";
 
 export default function WorkoutExplorer() {
   const [data, setData] = useState([]);

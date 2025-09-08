@@ -1,4 +1,4 @@
-import Logo from "../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
+import Logo from "../../assets/ChatGPT_Image_Jul_6__2025__03_44_02_PM-removebg-preview.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 

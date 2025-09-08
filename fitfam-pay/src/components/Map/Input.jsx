@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// import SearchGif from "../../assets/"
 function Input({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
 

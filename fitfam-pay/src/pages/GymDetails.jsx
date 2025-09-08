@@ -2,16 +2,16 @@ import GymDetailsCard from "../components/GymDetailsCard";
 import Gym from "../assets/gym-details.jpg";
 
 const sampleGym = {
-  name: "Praise Edoho Gym",
+  name: "The Max Gym",
   image: Gym,
-  location: "Lekki Phase 1, Eket",
+  location: "Lekki Phase 1, Lagos",
   description:
     "A state-of-the-art gym facility with the latest equipment and certified trainers.",
   features: [
-    "24/7 Access to drinking Garri",
-    "Personal Garri drinking coaches",
-    "Groundnut",
-    "Salt",
+    "24/7 Access to all equipment",
+    "Personal coaches",
+    "Boxing",
+    "Threadmil",
   ],
   price: 8000,
 };

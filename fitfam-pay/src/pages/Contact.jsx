@@ -1,5 +1,6 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/UI/Header";
+import Footer from "../components/UI/Footer";
+import Customer from "../assets/customer-care.webp";
 import "../Contact.css";
 function Contact() {
   return (
@@ -12,7 +13,6 @@ function Contact() {
           padding: "2rem 1rem",
         }}
       >
-  
         <div
           style={{
             display: "flex",
@@ -22,7 +22,6 @@ function Contact() {
             gap: "1rem",
           }}
         >
-
           <div
             style={{
               flex: "1",
@@ -34,8 +33,16 @@ function Contact() {
               alignItems: "flex-start",
             }}
           >
-            <h1 style={{ fontSize: "7rem", margin: 0, lineHeight: "1" }}>Hello.</h1>
-            <p style={{ fontSize: "1.5rem", marginTop: "1rem", maxWidth: "400px" }}>
+            <h1 style={{ fontSize: "7rem", margin: 0, lineHeight: "1" }}>
+              Hello.
+            </h1>
+            <p
+              style={{
+                fontSize: "1.5rem",
+                marginTop: "1rem",
+                maxWidth: "400px",
+              }}
+            >
               Need to get in touch? We're all ears..
             </p>
           </div>
@@ -50,12 +57,7 @@ function Contact() {
               paddingRight: "2rem",
             }}
           >
-          <img
-            src="/contact2.jpg"
-            alt="contact"
-            className="responsive-image"
-          />
-
+            <img src={Customer} alt="contact" className="responsive-image" />
           </div>
         </div>
 
@@ -70,12 +72,16 @@ function Contact() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>Contact Us</h1>
+          <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+            Contact Us
+          </h1>
           <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
             Reach out for inquiries, partnerships, or feedback.
           </p>
 
-          <form style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <form
+            style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+          >
             <input
               type="text"
               placeholder="Your Name"

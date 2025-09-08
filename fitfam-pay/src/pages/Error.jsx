@@ -1,6 +1,6 @@
 import ErrImg from "../assets/404 Error-amico.png";
 import { NavLink } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/UI/Footer";
 
 function Error() {
   return (
